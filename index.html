@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiTabForm</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <form method="POST" action="#">
+
+        <div class="tab" role="presentation">
+            <button type="button" id="defaultOpen" role="tablist" class="tablink" onclick="openTab(event, 'Basic')">Básico</button>
+            <button type="button" role="tablist" class="tablink" onclick="openTab(event, 'Address')">Endereço</button>
+            <button type="button" role="tablist" class="tablink" onclick="openTab(event, 'Permissions')">Permissões</button>
+        </div>
+
+        <div id="Basic" class="tabcontent" role="tabpanel">
+            <h1>Basic</h1>
+            <label for="name">
+                Name
+                <input type="text" name="name" id="name">
+            </label>
+
+            <label for="email">
+                Email
+                <input type="email" name="email" id="email">
+            </label>
+
+            <label for="password">
+                Password
+                <input type="password" name="password" id="password">
+            </label>
+        </div>
+        <div id="Address" class="tabcontent" role="tabpanel">
+            <h1>Address</h1>
+            <label for="address">
+                Address
+                <input type="text" name="address" id="address">
+            </label>
+        </div>
+        <div id="Permissions" class="tabcontent" role="tabpanel">
+            <h1>Pemrissions</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam itaque sunt, harum debitis
+                 inventore deserunt iusto autem facere. Voluptatem explicabo repellat perferendis maxime doloribus
+                  laborum aliquid voluptatibus facere, quisquam recusandae.
+            </p>
+        </div>
+
+        <input type="submit" value="Send" name="submit">
+
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>
